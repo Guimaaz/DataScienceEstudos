@@ -111,7 +111,7 @@ correlation = dados[['valor_aqi', 'valor_aqi_co', 'valor_aqi_ozonio', 'valor_aqi
 # plot do  mapa de calor
 plt.figure(figsize=(10, 8))
 sns.heatmap(correlation, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5)
-plt.title('Correlação entre as Variáveis de aqi')
+plt.title('Correlação entre as variaveis de aqi')
 plt.show()
 
 # Calcular a media do aqi por país
@@ -144,18 +144,3 @@ plt.show()
 
 
 
-# Olá, rede! Todos bem?
-
-# Recentemente, estava lendo uma matéria sobre a poluição do ar, tanto por gases quanto por partículas, e isso me motivou a iniciar um projeto focado em consultar e analisar a qualidade do ar (AQI - Air Quality Index) de diferentes cidades. O índice varia de 0 a 500, sendo que valores próximos de 500 indicam níveis perigosos para a saúde.
-
-# Comecei o projeto analisando o dataset para garantir que todos os dados estivessem no formato adequado para análise. Em seguida, realizei uma consulta para verificar a presença de dados vazios, com o objetivo de preenchê-los quando necessário. Caso algum valor estivesse em falta, analisei as linhas específicas para entender se era um erro de preenchimento ou se realmente se tratava de um valor nulo. Para valores que não precisavam ser preenchidos, os deixei como "em branco".
-
-# Após essa etapa, verifiquei as categorias para identificar possíveis erros de digitação ou inconsistências nas classificações.
-
-# A seguir, analisei as tabelas, começando pelos valores de AQI, para ter uma visão geral da qualidade do ar ao redor do mundo. Depois, explorei as categorias para entender a distribuição dos países conforme seus níveis de poluição.
-
-# Em um segundo momento, investiguei a relação entre os níveis de qualidade do ar e a quantidade de gases presentes, analisando como diferentes gases afetam o AQI.
-
-# Criei uma tabela para mostrar a relação entre todos os gases e a qualidade do ar, e calculei a média do AQI nos países com as maiores médias. Também elaborei uma lista das cidades com as melhores condições de ar, com base nos dados disponíveis no Kaggle (link: https://www.kaggle.com/datasets/sazidthe1/global-air-pollution-data/data).
-
-# Esse projeto foi uma ótima oportunidade para aprender mais sobre análise gráfica e como ela pode ser feita por meio de código, fornecendo insights e esclarecendo questões relevantes sobre a qualidade do ar global.
